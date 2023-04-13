@@ -1,0 +1,199 @@
+/* Start Global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Jomhuria', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #EDEDED;
+}
+
+:root {
+    --main-color: rgba(26, 31, 22, 0.5);
+    --main-box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
+    --section-border-radius: 16px;
+    --inputs-border-radius: 6px;
+    --main-width: 670px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global rules */
+/* Start Select Card */
+.select-card {
+    margin: 50px auto 0;
+    width: var(--main-width);
+    background-color: white;
+    border-radius: var(--section-border-radius);
+    max-width: 90%;
+}
+
+.select-card h2 {
+    padding: 20px 20px 0;
+    font-size: 31.25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.select-card .cards {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.select-card a {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.select-card a i {
+    margin-right: 10px;
+}
+
+/* End Select Card */
+/* Start New Card */
+.new-card {
+    margin: 30px auto 0;
+    width: var(--main-width);
+    background-color: white;
+    border-radius: var(--section-border-radius);
+    padding: 0 10px;
+    max-width: 90%;
+
+}
+
+.add-payment .new-card form {
+    padding: 20px;
+}
+
+.add-payment .new-card h2 {
+    padding: 20px 20px 0;
+    font-size: 31.25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.new-card input {
+    border: none;
+}
+
+.new-card .info {
+    color: var(--main-color);
+    font-size: 16px;
+    margin: 0 0 30px;
+}
+
+.new-card .info input {
+    width: 100%;
+    border-radius: var(--inputs-border-radius);
+    box-shadow: var(--main-box-shadow);
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.new-card .expiry-date {
+    color: var(--main-color);
+    display: flex;
+}
+.new-card .expiry-date label{
+    display: block;
+    margin-left: 5px;
+}
+
+.new-card .expiry-date .date {
+    margin-right: 20px;
+}
+.new-card .expiry-date .date input{
+    border-radius: var(--inputs-border-radius);
+    box-shadow: var(--main-box-shadow);
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+}
+.new-card .expiry-date .cvc {
+    
+}
+.new-card .expiry-date .cvc input{
+    border-radius: var(--inputs-border-radius);
+    box-shadow: var(--main-box-shadow);
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+}
+.new-card .radio {
+    display: flex;
+    padding: 20px 0;
+    text-align: center;
+}
+.new-card .radio input{
+    margin-right: 10px ;
+}
+.new-card .radio label{
+    font-size: 18px;
+    font-weight: 400;
+}
+.new-card .submit{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: var(--inputs-border-radius);
+    margin: 0 auto 0;
+}
+.new-card .submit input{
+   color: white;
+   background-color: black;
+}
+.new-card footer{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+.new-card footer .back{
+    color: black;
+    font-weight: 400;
+    
+}
+.new-card footer .connection{
+    text-decoration: none;
+    color: #02D693;
+}
+.new-card footer .connection i{
+    margin-right: 5px;
+}
+/* End New Card */

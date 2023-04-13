@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/E-Commerce.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500;700;800&family=Jomhuria&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="add-payment">
+        <div class="container">
+            <div class="select-card">
+                <h2>Select a Card</h2>
+                <div class="cards">
+                    <a href="#"> <i class="fa-solid fa-credit-card"></i>MasterCard ending in 4242</a>
+                    <a href="#"> <i class="fa-solid fa-credit-card"></i>Visa Debit ending in 2894</a>
+                </div>
+            </div>
+            <div class="new-card">
+                <h2>Add a new card</h2>
+                <form>
+                    <div class="info">
+                        <label>Cardholder Name</label>
+                        <input type="text" required placeholder="John Maker">
+                    </div>
+                    <div class="info">
+                        <label>Card Number</label>
+                        <input type="text" required placeholder="5126-2987-2214-7621" minlength="16" maxlength="16">
+                    </div>
+                    <div class="expiry-date">
+                        <div class="date">
+                            <label>Expiry-Date</label>
+                            <input type="date" required >
+                        </div>
+                        <div class="cvc">
+                            <label>CVC</label>
+                            <input type="text" placeholder="123" required>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" required>
+                        <label>Save this as your default payment method</label>
+                    </div>
+                    <div class="submit">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <input type="submit" value="Add Payment Method">
+                    </div>
+                    <footer>
+                        <a class="back" href="#">Back</a>
+                        <a class="connection" href="#"><i class="fa-solid fa-lock"></i> Secure Connection</a>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
